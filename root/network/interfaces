@@ -1,0 +1,13 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+auto lo
+iface lo inet loopback
+
+allow-hotplug wlx801f02e69c1c
+iface wlx801f02e69c1c inet static
+	address 192.168.20.1
+	network 192.168.20.0/24
+	netmask 255.255.255.0
+	broadcast 192.168.20.255
+	wpa-driver nl80211
+	wpa-debug-level -1
