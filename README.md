@@ -21,7 +21,7 @@ Set of scripts that allow a user to create Wifi server. I operate on a laptop wi
 
 # Installation
 
- - read your network card interface name (ifconfig). Copy the 'root' directory files to the root file system. If you worry about your current setup, then back it up, before copying the files. I assume you know what you are doing with your Linux setup
+ - read your network card interface name (ifconfig). Change interface name in 'root' directory files. Copy the 'root' directory files to the root file system. If you worry about your current setup, then back it up, before copying the files. I assume you know what you are doing with your Linux setup
  - you can also use the scripts as they are, to 'copy' necessary values to your setup.
  - copy wifi.sh script to you local filesystem, give it's execution rihts. It does 'start' everything after you plug in your dongle
 
