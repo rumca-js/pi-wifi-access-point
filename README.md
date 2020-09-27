@@ -43,11 +43,13 @@ Addtionally samba share could be created on the Linux workstation.
 
 Edit file /etc/samba/smb.conf and provide for "user":
 
+```
 [Shared]
 comment = Public storage
 path=/home/user/Shared
 read only=no
 browseable=Yes
+```
 
 After wifi-connect you will be able to browse the directory.
 
