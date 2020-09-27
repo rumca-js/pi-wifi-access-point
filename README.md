@@ -17,7 +17,7 @@ Set of scripts that allow a user to create Wifi server. I operate on a laptop wi
 # Run
 
  - Insert dongle, or network card
- - Execute 'wifi.sh' script
+ - Execute 'wifi.sh' script with root priviliges (sudo wifi.sh)
 
 # Configuration
 
