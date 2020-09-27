@@ -54,3 +54,14 @@ After wifi-connect you will be able to browse the directory.
 # Test
 
 Tested on Linux Mint 19.3
+
+# Use cases
+
+ - HTTP is one of the most commonly used protocols. After connect you can control your Linux device remotely. There are limitles possibilities
+ - Fixed IPs allow to create server/client application
+ - Linux machine can be controled via remote desktop
+ 
+ My own use cases:
+ 
+  - presentation machine. I do not want to use the laptop for presentation. I can plug in wifi raspberry machine, and control it from afar. Everybody can access it
+  - I do not like bluetooth
