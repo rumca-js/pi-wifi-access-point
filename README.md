@@ -8,16 +8,16 @@ In my setup I create the Wifi server on 'Edimax' Wifi dongle.
 
 # Use cases
 
- - HTTP is one of the most commonly used protocols. After connect you can control your Linux device remotely. There are limitles possibilities
- - Fixed IPs allow to create server/client application
- - Linux machine can be controled via remote desktop
+ - Linux machine VNC access (remote desktop)
  - Transfer files from Android phone to computer (pictures, etc.). I do not use Google pictures backup functionality
+ - HTTP is one of the most commonly used protocols. After connect you can control your Linux device remotely. There are limitles possibilities
+ - Fixed IPs allow to create reliable and secure server/client application. Bluetooth has some security holes
+ - Mobile NAS, access point. You can install such solution on a raspberry PI, connect drives via USB on a remote site, you can watch your movies from the disks, or listen to music stored on your disks
  
  My own use cases:
  
-  - presentation machine. I do not want to use the laptop for presentation. I can plug in wifi raspberry machine, and control it from afar. Everybody can access it
-  - I do not like bluetooth
-
+   - presentation machine. I do not want to use the laptop for presentation. I can plug in wifi raspberry machine, and control it from afar. Everybody can access it
+  
 ## Replace the Google pictures!
 
 OK. So how do you transfer pictures from android phone to the computer?
@@ -90,3 +90,8 @@ Tested on Linux Mint 19.3
  - If wifi is not visible on you client device, then your client migh not be supported that Wifi standard version
  - If you can connect to Wifi, but 'Obtaining IP address' is still visible on the client, or the client cannot receive ip number, then most likely dhcpd is incorrectly configured
  - If you cannot create files, then it has something to do with SMB config/proviliges
+ 
+ # TODO
+ 
+ Maybe installation can be automated? Can a installation scripot be created?
+ Bridge connection would be nice. To access laptop from a phone, and the laptop would allow the phone to transmit data with the Internet
