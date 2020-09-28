@@ -11,11 +11,23 @@ In my setup I create the Wifi server on 'Edimax' Wifi dongle.
  - HTTP is one of the most commonly used protocols. After connect you can control your Linux device remotely. There are limitles possibilities
  - Fixed IPs allow to create server/client application
  - Linux machine can be controled via remote desktop
+ - Transfer files from Android phone to computer (pictures, etc.). I do not use Google pictures backup functionality
  
  My own use cases:
  
   - presentation machine. I do not want to use the laptop for presentation. I can plug in wifi raspberry machine, and control it from afar. Everybody can access it
   - I do not like bluetooth
+
+## Replace the Google pictures!
+
+OK. So how do you transfer pictures from android phone to the computer?
+
+ - download 'FTP manager +'
+ - define SMB connection, by default you can use 'guest' access
+ - navigate in 'FTP Manager +' to a directory with your pictures. For my xiaomi A2 Lit it is 'DCIM/Camera/'
+ - select pictures you wish to move, click 'move'
+ - navigate in the program to your SMB location, create a directory if necessary
+ - paste files
 
 # Prerequisites
 
