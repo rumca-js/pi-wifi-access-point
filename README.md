@@ -67,3 +67,9 @@ After wifi-connect you will be able to browse the directory.
 # Test
 
 Tested on Linux Mint 19.3
+
+# Troubleshooting
+
+ - If wifi is not visible on you client device, then your hostapd might be incorrectly configured
+ - If wifi is not visible on you client device, then your client migh not be supported that Wifi standard version
+ - If you can connect to Wifi, but 'Obtaining IP address' is still visible on the client, or the client cannot receive ip number, then most likely dhcpd is incorrectly configured
