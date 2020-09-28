@@ -1,6 +1,10 @@
 # mint-wifi-server
 
-Set of scripts that allow a user to create Wifi server. I operate on a laptop with a 'Edimax' dongle attached. The Wifi server functionality was enabled for that dongle. It does not provide any means of Network bridging. It allows only to connect to the laptop, from example, from telephone.
+Set of scripts that allow a user to create Wifi server. 
+
+For example after setup and execution you can connect your telephone to your linux laptop via Wifi.
+
+In my setup I create the Wifi server on 'Edimax' Wifi dongle.
 
 # Use cases
 
@@ -73,3 +77,4 @@ Tested on Linux Mint 19.3
  - If wifi is not visible on you client device, then your hostapd might be incorrectly configured
  - If wifi is not visible on you client device, then your client migh not be supported that Wifi standard version
  - If you can connect to Wifi, but 'Obtaining IP address' is still visible on the client, or the client cannot receive ip number, then most likely dhcpd is incorrectly configured
+ - If you cannot create files, then it has something to do with SMB config/proviliges
