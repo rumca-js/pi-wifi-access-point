@@ -6,6 +6,8 @@ For example after setup and execution you can connect your telephone to your lin
 
 In my setup I create the Wifi server on 'Edimax' Wifi dongle.
 
+This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot solution out of the box. This solution could be intresting for raspberry pi use on the other hand.
+
 # Use cases
 
  - Linux machine VNC access (remote desktop)
