@@ -59,14 +59,17 @@ Provide public storage to path
 ```
 [Shared]
 comment = Public storage
-path=/home/user_name/Shared
+path=/home/pi/Shared
 read only=no
 browseable=Yes
 ```
 
-Create a samba user for the share. The user_name could be exactly the same as OS user, but the password can be different. This will allow us to use the user home folder
+To be able to access samba share you have to create a samba user. At the beginning the OS user is not defined in samba.
+For raspberry pi we can create samba user 'pi', define a password for it. It does not have to be the same as OS password.
 
-sudo smbpasswd -a user_name
+sudo smbpasswd -a pi
+
+By using pi user name we can access home pi directory. Otherwise we could not have these previliges out of the box.
 
 # Troubleshooting
 
