@@ -21,6 +21,7 @@ This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot
  - isc-dhcp-server
  - hostapd
  - crda
+ - samba samba-common-bin
 
 # Use
 
@@ -32,38 +33,40 @@ This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot
 
 Parts:
 
- - The Wifi setup
+  - The Wifi setup
  - The DHCP setup
  - SMB
 
 ## The Wifi
 
-configuration file: /etc/hostapd/hostapd.conf
-This configuration:
-SSID: 'test',
-password: 'PASSWORD'
-country_code=PL
+ - configuration file: /etc/hostapd/hostapd.conf
+ - This configuration:
+ - SSID: 'test',
+ - password: 'PASSWORD'
+ - country_code=PL
 
 ## The DHCP setup
 
-configuration file: /etc/dhcp/dhcpd.conf
-The computer acts as a server, has 192.168.20.1 IP.
+ - configuration file: /etc/dhcp/dhcpd.conf
+ - The computer acts as a server, has 192.168.20.1 IP.
 
 ## SMB
 
-Addtionally samba share could be created on the Linux workstation.
+ - configuration file: /etc/samba/smb.conf
 
-Edit file /etc/samba/smb.conf and provide for "user":
+Provide public storage to path
 
 ```
 [Shared]
 comment = Public storage
-path=/home/user/Shared
+path=/home/user_name/Shared
 read only=no
 browseable=Yes
 ```
 
-After wifi-connect you will be able to browse the directory.
+Create a samba user for the share. The user_name could be exactly the same as OS user, but the password can be different. This will allow us to use the user home folder
+
+sudo smbpasswd -a user_name
 
 # Troubleshooting
 
