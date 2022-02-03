@@ -8,26 +8,13 @@ This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot
 
 # Use cases
 
- - Linux machine VNC access (remote desktop)
- - Transfer files from Android phone to computer (pictures, etc.). I do not use Google pictures backup functionality
- - HTTP is one of the most commonly used protocols. After connect you can control your Linux device remotely. There are limitles possibilities
- - Fixed IPs allow to create reliable and secure server/client application. Bluetooth has some security holes
- - Mobile NAS, access point. You can install such solution on a raspberry PI, connect drives via USB on a remote site, you can watch your movies from the disks, or listen to music stored on your disks
+ - Making wireless hard drive (accessing hard drive through raspberry as Access Point)
+ - Controlling raspberry device by Wifi connection, where you as a client connect to the Wifi distributed by raspberry
+ - Easier to develop programs using HTTP than bluetooth between raspberry Access Point & client device
  
  My own use cases:
  
-   - presentation machine. I do not want to use the laptop for presentation. I can plug in wifi raspberry machine, and control it from afar. Everybody can access it
-  
-## Replace the Google pictures!
-
-OK. So how do you transfer pictures from android phone to the computer?
-
- - download 'FTP manager +'
- - define SMB connection, by default you can use 'guest' access
- - navigate in 'FTP Manager +' to a directory with your pictures. For my xiaomi A2 Lit it is 'DCIM/Camera/'
- - select pictures you wish to move, click 'move'
- - navigate in the program to your SMB location, create a directory if necessary
- - paste files
+    - transfer files from phone to laptop (laptop operation as Wifi Access Point)
 
 # Prerequisites
 
