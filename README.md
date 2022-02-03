@@ -22,20 +22,13 @@ This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot
  - hostapd
  - crda
 
-# Installation
+# Use
 
- - read your network card interface name (ifconfig). Change interface name in 'root' directory files. Copy the 'root' directory files to the root file system. If you worry about your current setup, then back it up, before copying the files. I assume you know what you are doing with your Linux setup
- - you can also use the scripts as they are, to 'copy' necessary values to your setup.
- - copy wifi.sh script to you local filesystem, give it's execution rihts. It does 'start' everything after you plug in your dongle
-
-# Run
-
- - Insert dongle, or network card
- - Execute 'wifi.sh' script with root priviliges (sudo wifi.sh)
+ - These scripts should be used as a point of reference
+ - if you plan on using a wifi dongle insert the dongle
+ - read your network card interface name (ifconfig). my device interface name was 'wlx801f02e69c1c', the files include that name
 
 # Configuration
-
-Everything was configured for the 'wlx801f02e69c1c' interface. To check your interface type 'ifconfig' into terminal. Find your interface name their.
 
 Parts:
 
@@ -67,18 +60,13 @@ browseable=Yes
 
 After wifi-connect you will be able to browse the directory.
 
-# Test
-
-Tested on Linux Mint 19.3
-
 # Troubleshooting
 
  - If wifi is not visible on you client device, then your hostapd might be incorrectly configured
  - If wifi is not visible on you client device, then your client migh not be supported that Wifi standard version
  - If you can connect to Wifi, but 'Obtaining IP address' is still visible on the client, or the client cannot receive ip number, then most likely dhcpd is incorrectly configured
  - If you cannot create files, then it has something to do with SMB config/proviliges
- 
- # TODO
- 
- Maybe installation can be automated? Can a installation scripot be created?
- Bridge connection would be nice. To access laptop from a phone, and the laptop would allow the phone to transmit data with the Internet
+
+# TODO
+
+automate via python script
