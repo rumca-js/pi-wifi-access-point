@@ -1,12 +1,10 @@
-# mint-wifi-server
+# pi-wifi-server
 
-Set of scripts that allow a user to create Wifi server. 
-
-For example after setup and execution you can connect your telephone to your linux laptop via Wifi.
+Set of scripts that allow a user to create Wifi Access Point. Creates WIFI session.
 
 In my setup I create the Wifi server on 'Edimax' Wifi dongle.
 
-This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot solution out of the box. This solution could be intresting for raspberry pi use on the other hand.
+This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot solution out of the box. 
 
 # Use cases
 
