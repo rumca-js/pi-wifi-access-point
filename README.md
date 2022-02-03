@@ -14,7 +14,7 @@ This solution is obsolete on Ubuntu machines, since Ubuntu provides Wifi hotspot
  
  My own use cases:
  
-    - transfer files from phone to laptop (laptop operation as Wifi Access Point)
+ - transfer files from phone to laptop when I'm on a trip (laptop operation as Wifi Access Point)
 
 # Prerequisites
 
@@ -38,10 +38,15 @@ Parts:
 
 ## The Wifi
 
-As an example 'test' wifi with 'PASSWORD' password is defined.
+configuration file: /etc/hostapd/hostapd.conf
+This configuration:
+SSID: 'test',
+password: 'PASSWORD'
+country_code=PL
 
 ## The DHCP setup
 
+configuration file: /etc/dhcp/dhcpd.conf
 The computer acts as a server, has 192.168.20.1 IP.
 
 ## SMB
